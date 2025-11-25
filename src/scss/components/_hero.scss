@@ -3,7 +3,7 @@
 .hero {
 	width: 100%;
 	height: 800px;
-	background-image: url("/src/image/backgrounds/hero-background.jpg");
+	background-image: url("../image/backgrounds/hero-background.jpg");
 	@include i.bg-image;
 	padding: 32px 40px 0;
 

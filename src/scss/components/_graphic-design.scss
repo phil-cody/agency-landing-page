@@ -1,7 +1,7 @@
 @use '../index' as i;
 
 .graphic-design {
-	background-image: url("/src/image/backgrounds/graphic-design.jpg");
+	background-image: url("../image/backgrounds/graphic-design.jpg");
 
 	&__title {
 		color: i.$green-800;

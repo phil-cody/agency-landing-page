@@ -1,7 +1,7 @@
 @use '../index' as i;
 
 .photography {
-	background-image: url("/src/image/backgrounds/photography.jpg");
+	background-image: url("../image/backgrounds/photography.jpg");
 
 	&__title {
 		color: i.$blue-950;
