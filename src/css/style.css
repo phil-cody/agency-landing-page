@@ -1,0 +1,333 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, p, figure, picture {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+.hero {
+  width: 100%;
+  height: 800px;
+  background-image: url("/src/image/backgrounds/hero-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 32px 40px 0;
+}
+.hero .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .header__nav {
+  display: flex;
+  gap: 48px;
+}
+.hero .header__nav .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 48px;
+}
+.hero .header__nav .nav-item {
+  list-style-type: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29.7px;
+  letter-spacing: 0;
+}
+.hero .header__nav-link {
+  color: #fff;
+}
+.hero .header__cta {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 24.75px;
+  letter-spacing: 1px;
+  border: none;
+  width: 140px;
+  height: 56px;
+  border-radius: 56px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.hero__content {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+  margin: 96px auto;
+}
+.hero__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 70px;
+  letter-spacing: 9px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.hero__scroll-indicator {
+  width: 30px;
+  height: 108px;
+}
+
+.stand-out {
+  flex-direction: row-reverse;
+}
+
+.graphic-design {
+  background-image: url("/src/image/backgrounds/graphic-design.jpg");
+}
+.graphic-design__title {
+  color: #24554a;
+}
+.graphic-design__text {
+  color: #3e7467;
+}
+
+.photography {
+  background-image: url("/src/image/backgrounds/photography.jpg");
+}
+.photography__title {
+  color: #052c3b;
+}
+.photography__text {
+  color: #19536c;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  margin: 162px auto;
+  width: fit-content;
+}
+.testimonials__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 4px;
+  color: #a7aaad;
+}
+.testimonials__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.testimonials__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 58px;
+  width: 350px;
+}
+.testimonials__text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29.7px;
+  letter-spacing: 0;
+  color: #5b636d;
+  text-align: center;
+}
+.testimonials__customer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+.testimonials__name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0;
+  color: #24303e;
+}
+.testimonials__post {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25.2px;
+  letter-spacing: 0;
+  color: #a7aaad;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.image-grid__item {
+  width: 100%;
+}
+
+.transform, .stand-out {
+  display: flex;
+}
+.transform__content, .stand-out__content {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.transform__title, .stand-out__title {
+  margin-bottom: 32px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0;
+  color: #24303e;
+  text-align: center;
+}
+.transform__text, .stand-out__text {
+  margin-bottom: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29.7px;
+  letter-spacing: 0;
+  color: #808397;
+}
+.transform__link, .stand-out__link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 24.75px;
+  letter-spacing: 1px;
+  color: #24303e;
+  align-self: flex-start;
+}
+.transform__image, .stand-out__image {
+  width: 50%;
+}
+
+.projects {
+  display: flex;
+}
+.projects .graphic-design,
+.projects .photography {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 50%;
+  aspect-ratio: 720/600;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projects .graphic-design__content,
+.projects .photography__content {
+  width: 339px;
+  margin-top: 396px;
+  text-align: center;
+}
+.projects .graphic-design__title,
+.projects .photography__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+}
+.projects .graphic-design__text,
+.projects .photography__text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: 0;
+}
+
+.footer {
+  background-color: #90d4c6;
+  padding: 73.5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__logo {
+  margin-bottom: 40px;
+}
+.footer__nav {
+  display: flex;
+  margin-bottom: 80px;
+}
+.footer__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 56px;
+}
+.footer__nav-item {
+  list-style-type: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29.7px;
+  letter-spacing: 0;
+}
+.footer__nav-link {
+  color: #458d7e;
+}
+.footer__social {
+  display: flex;
+}
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+.footer__social-item {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+@use '../index' as i;
+
+.hero {
+	width: 100%;
+	height: 800px;
+	background-image: url("/src/image/backgrounds/hero-background.jpg");
+	@include i.bg-image;
+	padding: 32px 40px 0;
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&__nav {
+			display: flex;
+			gap: i.$spacing-600;
+
+			.nav-list {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				gap: i.$spacing-600;
+
+			}
+
+			.nav-item {
+				list-style-type: none;
+				@include i.text-preset-10;
+			}
+
+			&-link {
+				color: i.$white;
+			}
+		}
+
+		&__cta {
+			@include i.text-preset-8;
+			border: none;
+			width: 140px;
+			height: 56px;
+			border-radius: 56px;
+			background-color: i.$white;
+			cursor: pointer;
+		}
+	}
+
+	&__content {
+		width: fit-content;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 96px;
+		margin: 96px auto;
+	}
+
+	&__title {
+		@include i.text-preset-1;
+		color: i.$white;
+		margin-bottom: i.$spacing-300;
+	}
+
+	&__scroll-indicator {
+		width: 30px;
+		height: 108px;
+	}
+}

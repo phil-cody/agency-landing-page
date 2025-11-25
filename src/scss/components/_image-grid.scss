@@ -1,0 +1,11 @@
+@use '../index' as i;
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0;
+
+	&__item {
+		width: 100%;
+	}
+}

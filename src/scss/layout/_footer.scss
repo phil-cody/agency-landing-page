@@ -1,0 +1,48 @@
+@use '../index' as i;
+
+.footer {
+	background-color: i.$green-300;
+	padding: 73.5px 0;
+	@include i.flex-center;
+	flex-direction: column;
+
+	&__logo {
+		margin-bottom: i.$spacing-500;
+	}
+
+	&__nav {
+		display: flex;
+		margin-bottom: i.$spacing-1000;
+
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			gap: i.$spacing-700;
+		}
+
+		&-item {
+			list-style-type: none;
+			@include i.text-preset-10;
+		}
+
+		&-link {
+			color: i.$green-500;
+		}
+	}
+
+	&__social {
+		display: flex;
+
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			gap: i.$spacing-300;
+		}
+
+		&-item {
+			list-style-type: none;
+		}
+	}
+}

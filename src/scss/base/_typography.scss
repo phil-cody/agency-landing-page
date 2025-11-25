@@ -1,0 +1,95 @@
+@mixin text-preset-1 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 70px;
+	letter-spacing: 9px;
+}
+
+@mixin text-preset-2 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 42px;
+	line-height: 52.5px;
+	letter-spacing: 6px;
+}
+
+@mixin text-preset-3 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 50px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-4 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-5 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 35px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-6 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 4px;
+}
+
+@mixin text-preset-7 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 22.5px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-8 {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: 15px;
+	line-height: 24.75px;
+	letter-spacing: 1px;
+}
+
+@mixin text-preset-9 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-10 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 29.7px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-11 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 27.2px;
+	letter-spacing: 0;
+}
+
+@mixin text-preset-12 {
+	font-family: "Barlow", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25.2px;
+	letter-spacing: 0;
+}

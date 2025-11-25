@@ -1,0 +1,49 @@
+@use '../index' as i;
+
+.testimonials {
+	@include i.flex-center;
+	flex-direction: column;
+	gap: i.$spacing-1000;
+	margin: 162px auto;
+	width: fit-content;
+
+	&__title {
+		@include i.text-preset-6;
+		color: i.$gray-400;
+	}
+
+	&__items {
+		@include i.flex-center;
+		gap: i.$spacing-400;
+	}
+
+	&__item {
+		@include i.flex-center;
+		flex-direction: column;
+		gap: i.$spacing-725;
+		width: 350px;
+	}
+
+	&__text {
+		@include i.text-preset-10;
+		color: i.$gray-600;
+		text-align: center;
+	}
+
+	&__customer {
+		@include i.flex-center;
+		flex-direction: column;
+		gap: i.$spacing-100;
+		margin-top: 14px;
+	}
+
+	&__name {
+		@include i.text-preset-7;
+		color: i.$gray-950;
+	}
+
+	&__post {
+		@include i.text-preset-12;
+		color: i.$gray-400;
+	}
+}

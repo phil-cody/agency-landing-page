@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&family=Barlow:wght@600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="src/css/style.css">
+	<title>Sunnyside Agency</title>
 </head>
+
 <body>
-	
+	<div class="container" id="main">
+		<main class="content">
+			<div class="hero">
+				<div class="header">
+					<img class="header__logo" src="src/image/logo/sunnyside-logo.svg" alt="sunnyside agency's logo">
+					<nav class="header__nav">
+						<ul class="nav-list">
+							<li class="nav-item">
+								<a href="#about" class="header__nav-link">About</a>
+							</li>
+							<li class="nav-item">
+								<a href="#services" class="header__nav-link">Services</a>
+							</li>
+							<li class="nav-item">
+								<a href="#projects" class="header__nav-link">Projects</a>
+							</li>
+						</ul>
+						<button class="header__cta">CONTACT</button>
+					</nav>
+				</div>
+				<div class="hero__content" id="about">
+					<h1 class="hero__title">WE ARE CREATIVES</h1>
+					<img class="hero__scroll-indicator" src="src/image/scroll-arrow.svg" alt="">
+				</div>
+			</div>
+			<section class="transform services" id="services">
+				<div class="transform__content">
+					<h2 class="transform__title">Transform your brand</h2>
+					<p class="transform__text">We are a full-service creative agency specializing in helping brands grow fast.
+						Engage
+						your clients through compelling visuals that do most of the marketing for you.</p>
+					<a href="#" class="transform__link">LEARN MORE</a>
+				</div>
+				<img src="src/image/services/transform-image.jpg" alt="" class="transform__image">
+			</section>
+			<section class="stand-out services">
+				<div class="stand-out__content">
+					<h2 class="stand-out__title">Stand out to the right audience</h2>
+					<p class="stand-out__text">Using a collaborative formula of designers, researchers, photographers,
+						videographers,
+						and copywriters, we’ll build and extend your brand in digital places. </p>
+					<a href="#" class="stand-out__link">LEARN MORE</a>
+				</div>
+				<img src="src/image/services/stand-out_image.jpg" alt="" class="stand-out__image">
+			</section>
+			<section class="projects" id="projects">
+				<section class="graphic-design">
+					<div class="graphic-design__content">
+						<h3 class="graphic-design__title">Graphic Design</h3>
+						<p class="graphic-design__text">Great design makes you memorable. We deliver artwork that underscores your
+							brand
+							message and captures potential clients’ attention.</p>
+					</div>
+				</section>
+				<section class="photography">
+					<div class="photography__content">
+						<h3 class="photography__title">Photography</h3>
+						<p class="photography__text">Increase your credibility by getting the most stunning, high-quality photos
+							that
+							improve your business image.</p>
+					</div>
+				</section>
+			</section>
+			<section class="testimonials">
+				<h3 class="testimonials__title">CLIENT TESTIMONIALS</h3>
+				<div class="testimonials__items">
+					<div class="testimonials__item">
+						<img src="src/image/avatars/avatar-1.jpg" alt="client's avatar" class="avatar">
+						<p class="testimonials__text">We put our trust in Sunnyside and they delivered, making sure our needs were
+							met and deadlines were always hit.</p>
+						<div class="testimonials__customer">
+							<p class="testimonials__name">Emily R.</p>
+							<p class="testimonials__post">Marketing Director</p>
+						</div>
+					</div>
+					<div class="testimonials__item">
+						<img src="src/image/avatars/avatar-2.jpg" alt="client's avatar" class="avatar">
+						<p class="testimonials__text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
+							made it a satisfying and enjoyable experience.</p>
+						<div class="testimonials__customer">
+							<p class="testimonials__name">Thomas S.</p>
+							<p class="testimonials__post">Chief Operating Officer</p>
+						</div>
+					</div>
+					<div class="testimonials__item">
+						<img src="src/image/avatars/avatar-3.jpg" alt="client's avatar" class="avatar">
+						<p class="testimonials__text">Incredible end result! Our sales increased over 400% when we worked with
+							Sunnyside. Highly recommended!</p>
+						<div class="testimonials__customer">
+							<p class="testimonials__name">Jennie F.</p>
+							<p class="testimonials__post">Business Owner</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="image-grid">
+				<img src="src/image/image-grid__section/Bitmap-1.jpg" alt="" class="image-grid__item">
+				<img src="src/image/image-grid__section/Bitmap-2.jpg" alt="" class="image-grid__item">
+				<img src="src/image/image-grid__section/Bitmap-3.jpg" alt="" class="image-grid__item">
+				<img src="src/image/image-grid__section/Bitmap-4.jpg" alt="" class="image-grid__item">
+			</section>
+		</main>
+		<footer>
+			<div class="footer">
+				<a href="#main"><img src="src/image/logo/sunnyside-logo__footer.svg" alt="" class="footer__logo"></a>
+				<nav class="footer__nav">
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a href="#about" class="footer__nav-link">About</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#services" class="footer__nav-link">Services</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#projects" class="footer__nav-link">Projects</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__social">
+					<ul class="footer__social-list">
+						<li class="footer__social-item">
+							<a href="#">
+								<img src="src/image/logo/social-logo/fb-logo.svg" alt="" class="footer__social-logo">
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#">
+								<img src="src/image/logo/social-logo/inst-logo.svg" alt="" class="footer__social-logo">
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#">
+								<img src="src/image/logo/social-logo/twitter-logo.svg" alt="" class="footer__social-logo">
+							</a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#">
+								<img src="src/image/logo/social-logo/pinterest-logo.svg" alt="" class="footer__social-logo">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
+
 </html>
