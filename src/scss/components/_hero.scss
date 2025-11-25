@@ -42,6 +42,11 @@
 			border-radius: 56px;
 			background-color: i.$white;
 			cursor: pointer;
+
+			&:hover {
+				color: i.$white;
+				background-color: color-mix(in srgb, i.$white 50%, transparent 100%);
+			}
 		}
 	}
 

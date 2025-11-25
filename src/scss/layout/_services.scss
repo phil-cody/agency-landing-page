@@ -1,6 +1,7 @@
 @use '../index' as i;
 
-.transform, .stand-out {
+.transform,
+.stand-out {
 	display: flex;
 
 	&__content {
@@ -29,6 +30,19 @@
 		@include i.text-preset-8;
 		color: i.$gray-950;
 		align-self: flex-start;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 137px;
+			height: 10px;
+			border-radius: 10px;
+			z-index: -1;
+		}
 	}
 
 	&__image {

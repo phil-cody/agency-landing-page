@@ -83,6 +83,10 @@ input, button, textarea, select {
   background-color: #fff;
   cursor: pointer;
 }
+.hero .header__cta:hover {
+  color: #fff;
+  background-color: color-mix(in srgb, #fff 50%, transparent 100%);
+}
 .hero__content {
   width: fit-content;
   height: fit-content;
@@ -106,8 +110,24 @@ input, button, textarea, select {
   height: 108px;
 }
 
+.transform__link::after {
+  background: color-mix(in srgb, #fad400 30%, transparent);
+}
+
+.transform__link:hover::after {
+  background: #fad400;
+}
+
 .stand-out {
   flex-direction: row-reverse;
+}
+
+.stand-out__link::after {
+  background: color-mix(in srgb, #fe7766 30%, transparent);
+}
+
+.stand-out__link:hover::after {
+  background: #fe7766;
 }
 
 .graphic-design {
@@ -204,10 +224,12 @@ input, button, textarea, select {
   width: 100%;
 }
 
-.transform, .stand-out {
+.transform,
+.stand-out {
   display: flex;
 }
-.transform__content, .stand-out__content {
+.transform__content,
+.stand-out__content {
   width: 30%;
   display: flex;
   align-items: center;
@@ -215,7 +237,8 @@ input, button, textarea, select {
   flex-direction: column;
   margin: auto;
 }
-.transform__title, .stand-out__title {
+.transform__title,
+.stand-out__title {
   margin-bottom: 32px;
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -225,7 +248,8 @@ input, button, textarea, select {
   color: #24303e;
   text-align: center;
 }
-.transform__text, .stand-out__text {
+.transform__text,
+.stand-out__text {
   margin-bottom: 16px;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
@@ -234,7 +258,8 @@ input, button, textarea, select {
   letter-spacing: 0;
   color: #808397;
 }
-.transform__link, .stand-out__link {
+.transform__link,
+.stand-out__link {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 15px;
@@ -242,8 +267,22 @@ input, button, textarea, select {
   letter-spacing: 1px;
   color: #24303e;
   align-self: flex-start;
+  position: relative;
 }
-.transform__image, .stand-out__image {
+.transform__link::after,
+.stand-out__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 137px;
+  height: 10px;
+  border-radius: 10px;
+  z-index: -1;
+}
+.transform__image,
+.stand-out__image {
   width: 50%;
 }
 
@@ -317,6 +356,9 @@ input, button, textarea, select {
 .footer__nav-link {
   color: #458d7e;
 }
+.footer__nav-link:hover {
+  color: #fff;
+}
 .footer__social {
   display: flex;
 }
@@ -328,6 +370,12 @@ input, button, textarea, select {
 }
 .footer__social-item {
   list-style-type: none;
+}
+.footer__social-logo {
+  color: #3e7467;
+}
+.footer__social-logo:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

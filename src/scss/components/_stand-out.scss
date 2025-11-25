@@ -3,3 +3,11 @@
 .stand-out {
 	flex-direction: row-reverse;
 }
+
+.stand-out__link::after {
+	background: color-mix(in srgb, i.$red-400 30%, transparent);
+}
+
+.stand-out__link:hover::after {
+			background: i.$red-400;
+		}

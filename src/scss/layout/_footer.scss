@@ -28,6 +28,10 @@
 
 		&-link {
 			color: i.$green-500;
+
+			&:hover {
+				color: i.$white;
+			}
 		}
 	}
 
@@ -43,6 +47,14 @@
 
 		&-item {
 			list-style-type: none;
+		}
+
+		&-logo {
+			color: i.$green-600;
+		}
+
+		&-logo:hover {
+			color: i.$white;
 		}
 	}
 }
