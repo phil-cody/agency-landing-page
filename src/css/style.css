@@ -196,6 +196,7 @@ input, button, textarea, select {
     min-width: 327px;
     width: calc(100vw - 48px);
     margin: 0 auto;
+    top: 80px;
     right: 24px;
   }
   .hero__title {
@@ -317,9 +318,11 @@ input, button, textarea, select {
 @media (max-width: 1440px) {
   .testimonials__items {
     flex-direction: column;
+    gap: 56px;
   }
   .testimonials__item {
     width: 600px;
+    gap: 32px;
   }
 }
 @media (max-width: 768px) {

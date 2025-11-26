@@ -53,10 +53,12 @@
 	.testimonials {
 		&__items {
 			flex-direction: column;
+			gap: i.$spacing-700;
 		}
 
 		&__item {
 			width: 600px;
+			gap: i.$spacing-400;
 		}
 	}
 }
