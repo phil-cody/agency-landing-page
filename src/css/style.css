@@ -43,6 +43,7 @@ input, button, textarea, select {
   background-repeat: no-repeat;
   background-position: center top;
   padding: 32px 40px 0;
+  position: relative;
 }
 .hero .header {
   display: flex;
@@ -87,14 +88,11 @@ input, button, textarea, select {
   color: #fff;
   background-color: color-mix(in srgb, #fff 50%, transparent 100%);
 }
-.hero__content {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 96px;
-  margin: 96px auto;
+.hero .header__burger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
 }
 .hero__title {
   font-family: "Fraunces", serif;
@@ -103,13 +101,46 @@ input, button, textarea, select {
   line-height: 70px;
   letter-spacing: 9px;
   color: #fff;
-  margin-bottom: 24px;
+  text-align: center;
+  margin: 15% auto;
 }
 .hero__scroll-indicator {
   width: 30px;
   height: 108px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1440px) {
+  .hero .header__nav {
+    display: none;
+  }
+  .hero .header__burger {
+    display: flex;
+  }
+  .hero__title {
+    margin: 72px auto;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 538px;
+  }
+  .hero__title {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 52.5px;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .transform__link::after {
   background: color-mix(in srgb, #fad400 30%, transparent);
 }
@@ -157,6 +188,7 @@ input, button, textarea, select {
   flex-direction: column;
   gap: 80px;
   margin: 162px auto;
+  max-width: 100%;
   width: fit-content;
 }
 .testimonials__title {
@@ -215,6 +247,19 @@ input, button, textarea, select {
   color: #a7aaad;
 }
 
+@media (max-width: 1440px) {
+  .testimonials__items {
+    flex-direction: column;
+  }
+  .testimonials__item {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials__item {
+    width: 350px;
+  }
+}
 .image-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -224,6 +269,12 @@ input, button, textarea, select {
   width: 100%;
 }
 
+@media (max-width: 1440px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+  }
+}
 .transform,
 .stand-out {
   display: flex;
@@ -286,6 +337,49 @@ input, button, textarea, select {
   width: 50%;
 }
 
+@media (max-width: 1440px) {
+  .transform,
+  .stand-out {
+    flex-direction: column-reverse;
+  }
+  .transform__content,
+  .stand-out__content {
+    width: 60%;
+    margin: 67.5px auto;
+    gap: 32px;
+  }
+  .transform__title,
+  .stand-out__title {
+    margin-bottom: 0;
+  }
+  .transform__text,
+  .stand-out__text {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .transform__link,
+  .stand-out__link {
+    align-self: center;
+    position: relative;
+  }
+  .transform__image,
+  .stand-out__image {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .transform__content,
+  .stand-out__content {
+    width: 88%;
+    margin: 67.5px auto;
+    gap: 24px;
+  }
+  .transform__link,
+  .stand-out__link {
+    align-self: center;
+    position: relative;
+  }
+}
 .projects {
   display: flex;
 }
@@ -294,16 +388,19 @@ input, button, textarea, select {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  min-height: 600px;
   width: 50%;
   aspect-ratio: 720/600;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .projects .graphic-design__content,
 .projects .photography__content {
+  position: relative;
   width: 339px;
-  margin-top: 396px;
+  top: 66%;
   text-align: center;
 }
 .projects .graphic-design__title,
@@ -324,6 +421,15 @@ input, button, textarea, select {
   letter-spacing: 0;
 }
 
+@media (max-width: 1440px) {
+  .projects {
+    flex-direction: column;
+  }
+  .projects .graphic-design,
+  .projects .photography {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #90d4c6;
   padding: 73.5px 0;
@@ -376,6 +482,10 @@ input, button, textarea, select {
 }
 .footer__social-logo:hover {
   color: #fff;
+}
+
+body {
+  min-width: 375px;
 }
 
 /*# sourceMappingURL=style.css.map */

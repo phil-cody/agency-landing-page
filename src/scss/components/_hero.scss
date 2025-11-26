@@ -6,6 +6,7 @@
 	background-image: url("../image/backgrounds/hero-background.jpg");
 	@include i.bg-image;
 	padding: 32px 40px 0;
+	position: relative;
 
 	.header {
 		display: flex;
@@ -48,26 +49,61 @@
 				background-color: color-mix(in srgb, i.$white 50%, transparent 100%);
 			}
 		}
-	}
 
-	&__content {
-		width: fit-content;
-		height: fit-content;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 96px;
-		margin: 96px auto;
+		&__burger {
+			border: none;
+			background-color: transparent;
+			cursor: pointer;
+			display: none;
+		}
 	}
 
 	&__title {
 		@include i.text-preset-1;
 		color: i.$white;
-		margin-bottom: i.$spacing-300;
+		text-align: center;
+		margin: 15% auto;
 	}
 
 	&__scroll-indicator {
 		width: 30px;
 		height: 108px;
+		margin: auto;
+		position: absolute;
+		left: 50%;
+		top: 52%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (max-width: 1440px) {
+	.hero {
+		.header {
+			&__nav {
+				display: none;
+			}
+
+			&__burger {
+				display: flex;
+			}
+		}
+
+		&__title {
+			margin: 72px auto;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		height: 538px;
+
+		&__title {
+			@include i.text-preset-2;
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }

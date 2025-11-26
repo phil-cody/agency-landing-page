@@ -5,6 +5,7 @@
 	flex-direction: column;
 	gap: i.$spacing-1000;
 	margin: 162px auto;
+	max-width: 100%;
 	width: fit-content;
 
 	&__title {
@@ -45,5 +46,25 @@
 	&__post {
 		@include i.text-preset-12;
 		color: i.$gray-400;
+	}
+}
+
+@media (max-width: 1440px) {
+	.testimonials {
+		&__items {
+			flex-direction: column;
+		}
+
+		&__item {
+			width: 600px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.testimonials {
+		&__item {
+			width: 350px;
+		}
 	}
 }

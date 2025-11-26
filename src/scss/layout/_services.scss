@@ -49,3 +49,53 @@
 		width: 50%;
 	}
 }
+
+@media (max-width: 1440px) {
+
+	.transform,
+	.stand-out {
+		flex-direction: column-reverse;
+
+		&__content {
+			width: 60%;
+			margin: 67.5px auto;
+			gap: 32px;
+		}
+
+		&__title {
+			margin-bottom: 0;
+		}
+
+		&__text {
+			margin-bottom: 0;
+			text-align: center;
+		}
+
+		&__link {
+			align-self: center;
+			position: relative;
+		}
+
+		&__image {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.transform,
+	.stand-out {
+
+		&__content {
+			width: 88%;
+			margin: 67.5px auto;
+			gap: 24px;
+		}
+
+		&__link {
+			align-self: center;
+			position: relative;
+		}
+	}
+}
