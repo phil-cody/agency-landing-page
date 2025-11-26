@@ -21,24 +21,24 @@
  - Использование JavaScript для реализации Sidebar menu (переключатель по бургер-кнопке)
 
 ## Компоненты
- 1 Header
+ 1. Header
   * Логотип
   * Навигация
   * Кнопка CONTACT
   * Бургер меню + мобильное меню
- 2 Hero
+ 2. Hero
   * Заголовок
   * Индикатор прокрутки 
- 3 Services
+ 3. Services
   * Transform you brand
   * Stand out to the right audience
- 4 Projects
+ 4. Projects
   * Graphic Design
   * Photography
- 5 Testimonials
+ 5. Testimonials
   * Отзывы клиентов (аватар, текст, имя, должность)
- 6 Image Grid
- 7 Footer
+ 6. Image Grid
+ 7. Footer
   * Логотип
   * Навигация
   * Социальные сети
