@@ -5,7 +5,7 @@
 	height: 800px;
 	background-image: url("../image/backgrounds/hero-background.jpg");
 	@include i.bg-image;
-	padding: 32px 40px 0;
+	padding: i.$spacing-400 i.$spacing-500 0;
 	position: relative;
 
 	.header {
@@ -39,8 +39,8 @@
 			@include i.text-preset-8;
 			border: none;
 			width: 140px;
-			height: 56px;
-			border-radius: 56px;
+			height: i.$spacing-700;
+			border-radius: i.$spacing-700;
 			background-color: i.$white;
 			cursor: pointer;
 
@@ -61,7 +61,7 @@
 			display: none;
 			position: absolute;
 			top: 100px;
-			right: 40px;
+			right: i.$spacing-500;
 			z-index: 1;
 			flex-direction: column;
 			align-items: flex-end;
@@ -102,8 +102,8 @@
 					@include i.text-preset-8;
 					border: none;
 					width: 140px;
-					height: 56px;
-					border-radius: 56px;
+					height: i.$spacing-700;
+					border-radius: i.$spacing-700;
 					background-color: i.$yellow-500;
 					cursor: pointer;
 					color: i.$black;
@@ -155,6 +155,7 @@
 @media (max-width: 768px) {
 	.hero {
 		height: 538px;
+		padding: 32px 24px 0;
 
 		.header {
 
@@ -162,7 +163,7 @@
 				min-width: 327px;
 				width: calc(100vw - 48px);
 				margin: 0 auto;
-				right: 24px;
+				right: i.$spacing-300;
 			}
 		}
 

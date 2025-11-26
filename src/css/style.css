@@ -190,6 +190,7 @@ input, button, textarea, select {
 @media (max-width: 768px) {
   .hero {
     height: 538px;
+    padding: 32px 24px 0;
   }
   .hero .header__menu {
     min-width: 327px;
