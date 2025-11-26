@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@900&family=Barlow:wght@600&display=swap"
 		rel="stylesheet">
+	<script src="src/scripts/modal-menu.js" defer></script>
 	<link rel="stylesheet" href="src/css/style.css">
 	<title>Sunnyside Agency</title>
 </head>
@@ -32,13 +33,30 @@
 						</ul>
 						<button class="header__cta">CONTACT</button>
 					</nav>
-					<button class="header__burger">
+					<button class="header__burger" id="burger">
 						<svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<rect width="32" height="2.66667" fill="white" />
 							<rect y="10.6666" width="32" height="2.66667" fill="white" />
 							<rect y="21.3334" width="32" height="2.66667" fill="white" />
 						</svg>
 					</button>
+					<div class="header__menu" id="menu">
+						<div class="header__menu-cloud"></div>
+						<nav class="header__menu-nav">
+							<ul class="menu-list">
+								<li class="menu-item">
+									<a href="#about" class="menu-link">About</a>
+								</li>
+								<li class="menu-item">
+									<a href="#services" class="menu-link">Services</a>
+								</li>
+								<li class="menu-item">
+									<a href="#projects" class="menu-link">Projects</a>
+								</li>
+							</ul>
+							<button class="header__menu-cta">CONTACT</button>
+						</nav>
+					</div>
 				</div>
 				<h1 class="hero__title" id="about">WE ARE CREATIVES</h1>
 				<img class="hero__scroll-indicator" src="src/image/scroll-arrow.svg" alt="">
