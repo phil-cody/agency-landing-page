@@ -168,7 +168,8 @@
 
 		&__title {
 			@include i.text-preset-2;
-			margin: 40px auto;
+			top: 0;
+			margin: 110px auto 0;
 		}
 	}
 }
